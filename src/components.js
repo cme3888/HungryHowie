@@ -79,6 +79,9 @@ Crafty.c('Grid', {
   // visit to cherry
   visit: function() {
     this.destroy();
-    Crafty.trigger('CherryVisited', this);
+    Crafty.trigger('CherryVisited', this)
+    Crafty.audio.play("eatCherry");
   }
 });
+  Crafty.audio.add("eatCherry", "sounds/eatCherry.mp3");
+

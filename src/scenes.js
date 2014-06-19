@@ -38,7 +38,7 @@ Crafty.scene('Game', function() {
   }
  
   // ten or less cherries
-  var max_cherries = 10;
+  var max_cherries = 30;
   for (var x = 0; x < Game.map_grid.width; x++) {
     for (var y = 0; y < Game.map_grid.height; y++) {
       if (Math.random() < 0.02) {
