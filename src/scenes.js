@@ -24,12 +24,12 @@ Crafty.scene('Game', function() {
      
 
       if (at_edge) {
-        // Place a tree entity at the current tile
+        // Place a carrot 
         Crafty.e('Carrot').at(x, y);
         this.occupied[x][y] = true;
       } else if (Math.random() < 0.06 && !this.occupied[x][y]) {
-        // Place a bush entity at the current tile
-        Crafty.e('Turnip').at(x, y);
+        // Place a turnip 
+        Crafty.e('Burger').at(x, y);
         this.occupied[x][y] = true;
 
       }
@@ -37,7 +37,7 @@ Crafty.scene('Game', function() {
     }
   }
  
-  // ten os less cherries
+  // ten or less cherries
   var max_cherries = 10;
   for (var x = 0; x < Game.map_grid.width; x++) {
     for (var y = 0; y < Game.map_grid.height; y++) {
@@ -66,8 +66,8 @@ Crafty.scene('Game', function() {
 Crafty.scene('Victory', function() {
   // Display some text in celebration of the victory
   Crafty.e('2D, DOM, Text')
-    .attr({ x: 0, y: 0 })
-    .text('Victory!');
+    .text('Hungry Howie FULLLLLL!')
+    .css($text_css);
  
   // Watch for the player to press a key, then restart the game
   //  when a key is pressed
@@ -95,8 +95,9 @@ Crafty.scene('Loading', function(){
    
       Crafty.sprite(23, 'assets/fruitvegsweet_sheet.png', {
         spr_carrot:    [0, 0],
-        spr_turnip:    [6, 0],
+        spr_burger:    [2.2, 3],
         spr_cherry: [1.5, 1.5]
+
     
         });
 

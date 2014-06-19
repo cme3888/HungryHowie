@@ -1,8 +1,8 @@
 Game = {
   // This defines our grid's size and the size of each of its tiles
   map_grid: {
-    width:  24,
-    height: 16,
+    width:  50,
+    height: 50,
     tile: {
       width:  16,
       height: 16
@@ -32,4 +32,4 @@ Game = {
   }
 }
  
-$text_css = { 'font-size': '24px', 'font-family': 'Arial', 'color': 'white', 'text-align': 'center' }
+$text_css = { 'font-size': '24px', 'font-family': 'Courier New', 'color': 'white', 'text-align': 'center' };
