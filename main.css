@@ -5,5 +5,9 @@ header{
 	padding:10px;
 	
 }
-
+.button{
+	height:50px;
+	width:50px;
+	background-color:gray;
+}
 
